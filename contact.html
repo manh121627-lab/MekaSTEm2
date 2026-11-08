@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ | MekaSTEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body class="contact-page">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo">MekaSTEM</a>
+            <nav class="navbar" id="navMenu">
+                <a href="index.html">Trang chủ</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="courses.html">Khoá học&amp;Gia sư</a>
+                <a href="contact.html" class="active">Liên hệ</a>
+            </nav>
+            <a href="contact.html" class="btn btn-primary nav-cta">Đăng ký học</a>
+            <button class="menu-toggle" id="menuBtn" aria-label="Mở menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-banner">
+            <div class="container page-banner-inner">
+                <div class="page-banner-copy">
+                    <p class="eyebrow"><span></span> Kết nối cùng MekaSTEM</p>
+                    <h1>Bắt đầu hành trình khám phá của con.</h1>
+                    <p class="banner-description">Để lại thông tin, đội ngũ tư vấn sẽ giúp gia đình chọn lộ trình học phù hợp.</p>
+                </div>
+                <div class="banner-visual">
+                    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Học sinh thực hành khám phá khoa học và công nghệ">
+                    <div class="banner-note"><i class="fa-solid fa-lightbulb"></i><span>Tư vấn<br><strong>miễn phí</strong></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact-section">
+            <div class="container contact-grid">
+                <div class="contact-card">
+                    <p class="contact-kicker">Chúng tôi luôn sẵn sàng</p>
+                    <h2>Cùng con chọn đúng hướng đi.</h2>
+                    <p class="contact-intro">Liên hệ với MekaSTEM để được giải đáp về chương trình, lịch học và lộ trình phù hợp.</p>
+                    <ul class="contact-list">
+                        <li><i class="fa-solid fa-phone"></i><span><small>Gọi cho chúng tôi</small><a href="tel:0901234567">0901 234 567</a></span></li>
+                        <li><i class="fa-solid fa-envelope"></i><span><small>Email</small><a href="mailto:hello@mekastem.vn">hello@mekastem.vn</a></span></li>
+                        <li><i class="fa-solid fa-location-dot"></i><span><small>Địa chỉ</small><span>180 Trường Chinh, Kiến An, Hải Phòng</span></span></li>
+                        <li><i class="fa-solid fa-clock"></i><span><small>Giờ tư vấn</small><span>Thứ Hai – Chủ Nhật, 8:00 – 20:00</span></span></li>
+                    </ul>
+                    <div class="contact-card-mark" aria-hidden="true">M</div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-heading">
+                        <p class="form-kicker">Đăng ký tư vấn</p>
+                        <h2>Để lại thông tin cho chúng tôi</h2>
+                        <p>Các trường có dấu <span>*</span> là bắt buộc.</p>
+                    </div>
+                    <div class="input-row">
+                        <label>
+                            Họ tên <span>*</span>
+                            <input type="text" name="name" placeholder="Ví dụ: Nguyễn Minh Anh" autocomplete="name" required>
+                        </label>
+                        <label>
+                            Số điện thoại <span>*</span>
+                            <input type="tel" name="phone" placeholder="Nhập số điện thoại" autocomplete="tel" required>
+                        </label>
+                    </div>
+                    <label>
+                        Email <span>*</span>
+                        <input type="email" name="email" placeholder="name@example.com" autocomplete="email" required>
+                    </label>
+                    <label>
+                        Khóa học quan tâm
+                        <select name="course">
+                            <option value="">Chọn khóa học</option>
+                            <option>Toán thực tế & tư duy</option>
+                            <option>Vật lý </option>
+                            <option></option>
+                        </select>
+                    </label>
+                    <label>
+                        Lời nhắn
+                        <textarea name="message" rows="5" placeholder="Mô tả nhu cầu học tập..."></textarea>
+                    </label>
+                    <button type="submit" class="btn btn-primary submit-btn">Gửi thông tin <i class="fa-solid fa-arrow-right"></i></button>
+                    <p id="formStatus" class="form-status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div>
+                <a href="index.html" class="logo">MekaSTEM</a>
+                <p>Học tập hiệu quả, tư duy sáng tạo, tương lai bền vững.</p>
+            </div>
+            <div>
+                <h4>Liên kết</h4>
+                <ul>
+                    <li><a href="about.html">Giới thiệu</a></li>
+                    <li><a href="courses.html">Khóa học</a></li>
+                    <li><a href="contact.html">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Liên hệ</h4>
+                <ul>
+                    <li><i class="fa-solid fa-phone"></i> 0901 234 567</li>
+                    <li><i class="fa-solid fa-envelope"></i> hello@mekastem.vn</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 180 Trường Chinh, Kiến An, TP. Hải Phòng</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 MekaSTEM. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

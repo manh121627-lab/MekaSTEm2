@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Khám phá bộ học cụ STEM, robot, lập trình và khoa học thực hành dành cho học sinh tại MekaSTEM.">
+    <title>Sản phẩm STEM | MekaSTEM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body class="product-page">
+    <header class="site-header">
+        <div class="container nav-wrap">
+            <a href="index.html" class="logo">MekaSTEM</a>
+            <nav class="navbar" id="navMenu">
+                <a href="index.html">Trang chủ</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="courses.html">Khóa học&amp;Gia sư</a>
+                <a href="product.html" class="active">Sản phẩm</a>
+                <a href="contact.html">Liên hệ</a>
+            </nav>
+            <div class="header-actions">
+                <button class="cart-button" id="cartButton" type="button" aria-label="Mở giỏ hàng">
+                    <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+                    <span>Giỏ hàng</span>
+                    <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+                </button>
+                <a href="contact.html" class="btn btn-primary nav-cta">Đăng ký học</a>
+            </div>
+            <button class="menu-toggle" id="menuBtn" aria-label="Mở menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-hero">
+            <div class="container shop-hero-inner">
+                <div class="shop-hero-copy">
+                    <p class="eyebrow"><span></span> Góc học tập MekaSTEM</p>
+                    <h1>Học bằng cách<br><em>tự tay khám phá.</em></h1>
+                    <p>Chọn bộ học cụ STEM được tuyển chọn để mỗi giờ học đều trở thành một hành trình sáng tạo.</p>
+                    <a href="#products" class="btn btn-primary">Khám phá sản phẩm <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+                    <div class="shop-trust">
+                        <span><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Học cụ chọn lọc</span>
+                        <span><i class="fa-solid fa-truck-fast" aria-hidden="true"></i> Tư vấn tận tâm</span>
+                    </div>
+                </div>
+                <div class="shop-hero-art" aria-label="Minh họa bộ học cụ STEM">
+                    <div class="art-orbit orbit-one"></div>
+                    <div class="art-orbit orbit-two"></div>
+                    <div class="art-card art-card-main"><i class="fa-solid fa-robot" aria-hidden="true"></i><span>MAKE<br>YOUR<br>IDEA</span></div>
+                    <div class="art-card art-card-small art-card-yellow"><i class="fa-solid fa-gear" aria-hidden="true"></i></div>
+                    <div class="art-card art-card-small art-card-white"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+                    <span class="art-spark spark-one">✳</span>
+                    <span class="art-spark spark-two">+</span>
+                    <span class="art-note">Tò mò hôm nay,<br><strong>sáng tạo ngày mai.</strong></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="shop-benefits" aria-label="Lợi ích khi mua hàng">
+            <div class="container benefit-row">
+                <div><span class="benefit-icon"><i class="fa-solid fa-cubes" aria-hidden="true"></i></span><span><strong>Học qua thực hành</strong><small>Chạm, thử nghiệm và sáng tạo</small></span></div>
+                <div><span class="benefit-icon"><i class="fa-solid fa-child-reaching" aria-hidden="true"></i></span><span><strong>Phù hợp từng độ tuổi</strong><small>Từ làm quen đến nâng cao</small></span></div>
+                <div><span class="benefit-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span><span><strong>Được tư vấn tận tình</strong><small>Chọn đúng bộ học cụ cho con</small></span></div>
+            </div>
+        </section>
+
+        <section class="section shop-section" id="products">
+            <div class="container">
+                <div class="section-heading shop-heading">
+                    <div>
+                        <p class="eyebrow">Cửa hàng STEM</p>
+                        <h2>Mở hộp ý tưởng,<br>khám phá điều mới.</h2>
+                    </div>
+                    <p>Từ robot đầu tiên đến những thí nghiệm khoa học vui nhộn — mỗi sản phẩm đều khuyến khích trẻ học chủ động và sáng tạo.</p>
+                </div>
+
+                <div class="shop-toolbar">
+                    <div class="category-list" role="group" aria-label="Lọc theo danh mục">
+                        <button class="category-chip active" type="button" data-filter="all" aria-pressed="true">Tất cả <span>20</span></button>
+                        <button class="category-chip" type="button" data-filter="robotics" aria-pressed="false">Khoa cụ giảng dạy</button>
+                        <button class="category-chip" type="button" data-filter="science" aria-pressed="false">sản phẩm kỹ thuật</button>
+                        <button class="category-chip" type="button" data-filter="math" aria-pressed="false">bộ dụng cụ khoa học</button>
+                        <button class="category-chip" type="button" data-filter="creative" aria-pressed="false">dfndmhhjj</button>
+                    </div>
+                    <div class="shop-controls">
+                        <label class="search-box">
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            <input id="productSearch" type="search" placeholder="Tìm sản phẩm..." aria-label="Tìm sản phẩm">
+                        </label>
+                        <label class="sort-box">
+                            <span class="sr-only">Sắp xếp sản phẩm</span>
+                            <select id="productSort">
+                                <option value="featured">Nổi bật</option>
+                                <option value="price-low">Giá: thấp đến cao</option>
+                                <option value="price-high">Giá: cao đến thấp</option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+
+                <p class="results-count" id="resultsCount" aria-live="polite">Đang hiển thị 20 sản phẩm</p>
+                <div class="product-grid" id="productGrid">
+                    <article class="product-card" data-category="robotics" data-name="Robot lập trình mini" data-price="690000">
+                        <div class="product-visual visual-blue"><span class="product-badge">Bán chạy</span><i class="fa-solid fa-robot" aria-hidden="true"></i><span class="visual-caption">ROBOTICS KIT</span><button class="quick-add" type="button" aria-label="Thêm Robot lập trình mini vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">ROBOT &amp; CODING</p><h3>Compa dành cho giáo viên</h3><p class="product-desc">Làm quen tư duy lập trình qua robot thông minh.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9 <small>(28)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>690.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="science" data-name="Kính hiển vi khám phá" data-price="850000">
+                        <div class="product-visual visual-lilac"><span class="product-badge badge-new">Mới</span><i class="fa-solid fa-microscope" aria-hidden="true"></i><span class="visual-caption">DISCOVERY LAB</span><button class="quick-add" type="button" aria-label="Thêm Kính hiển vi khám phá vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">KHOA HỌC</p><h3>mô hình hình tứ diện</h3><p class="product-desc">Quan sát thế giới tí hon ngay tại nhà.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8 <small>(16)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>850.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="math" data-name="Bộ hình học không gian" data-price="320000">
+                        <div class="product-visual visual-yellow"><i class="fa-solid fa-shapes" aria-hidden="true"></i><span class="visual-caption">MATH IN 3D</span><button class="quick-add" type="button" aria-label="Thêm In hình 3d theo yêu cầu vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">TOÁN TƯ DUY</p><h3>In hình 3d theo yêu cầu</h3><p class="product-desc">Khám phá hình khối bằng mô hình trực quan.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.7 <small>(12)</small></span><span>7+ tuổi</span></div><div class="product-buy"><strong>320.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="creative" data-name="Bộ lắp ráp cầu sáng tạo" data-price="450000">
+                        <div class="product-visual visual-peach"><span class="product-badge">Yêu thích</span><i class="fa-solid fa-bridge" aria-hidden="true"></i><span class="visual-caption">BUILD &amp; CREATE</span><button class="quick-add" type="button" aria-label="Thêm sản phẩm trống vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">SÁNG TẠO</p><h3>sản phẩm trống</h3><p class="product-desc">sản phẩm trống.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9 <small>(21)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>450.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="robotics" data-name="Mạch điện tử khám phá" data-price="590000">
+                        <div class="product-visual visual-mint"><i class="fa-solid fa-microchip" aria-hidden="true"></i><span class="visual-caption">CIRCUIT STARTER</span><button class="quick-add" type="button" aria-label="Thêm Mạch điện tử khám phá vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">ROBOT &amp; CODING</p><h3>Mạch điện tử khám phá</h3><p class="product-desc">Lắp mạch đơn giản và tạo đèn LED của riêng em.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8 <small>(19)</small></span><span>9+ tuổi</span></div><div class="product-buy"><strong>590.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="science" data-name="Trạm thời tiết tí hon" data-price="420000">
+                        <div class="product-visual visual-sky"><i class="fa-solid fa-cloud-sun" aria-hidden="true"></i><span class="visual-caption">WEATHER WATCH</span><button class="quick-add" type="button" aria-label="Thêm Trạm thời tiết tí hon vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">KHOA HỌC</p><h3>Trạm thời tiết tí hon</h3><p class="product-desc">Tìm hiểu nhiệt độ, gió và những hiện tượng quanh ta.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.7 <small>(14)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>420.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="math" data-name="Bộ tangram tư duy" data-price="180000">
+                        <div class="product-visual visual-lilac"><i class="fa-solid fa-puzzle-piece" aria-hidden="true"></i><span class="visual-caption">THINKING TILES</span><button class="quick-add" type="button" aria-label="Thêm Bộ tangram tư duy vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">TOÁN TƯ DUY</p><h3>Bộ tangram tư duy</h3><p class="product-desc">Rèn khả năng quan sát và tư duy hình ảnh linh hoạt.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8 <small>(32)</small></span><span>6+ tuổi</span></div><div class="product-buy"><strong>180.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="creative" data-name="Bộ mô hình năng lượng gió" data-price="520000">
+                        <div class="product-visual visual-blue"><span class="product-badge badge-new">Mới</span><i class="fa-solid fa-wind" aria-hidden="true"></i><span class="visual-caption">GREEN ENERGY</span><button class="quick-add" type="button" aria-label="Thêm Bộ mô hình năng lượng gió vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">SÁNG TẠO</p><h3>Mô hình năng lượng gió</h3><p class="product-desc">Lắp tua-bin mini và khám phá năng lượng tái tạo.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9 <small>(17)</small></span><span>9+ tuổi</span></div><div class="product-buy"><strong>520.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="robotics" data-name="Bộ coding Scratch cơ bản" data-price="350000">
+                        <div class="product-visual visual-yellow"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i><span class="visual-caption">CODE YOUR GAME</span><button class="quick-add" type="button" aria-label="Thêm Bộ coding Scratch cơ bản vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">ROBOT &amp; CODING</p><h3>Coding Scratch cơ bản</h3><p class="product-desc">Thẻ dự án từng bước cho lập trình viên nhí.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8 <small>(25)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>350.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="science" data-name="Bộ thí nghiệm hóa học vui" data-price="480000">
+                        <div class="product-visual visual-peach"><span class="product-badge">Bán chạy</span><i class="fa-solid fa-flask" aria-hidden="true"></i><span class="visual-caption">JUNIOR LAB</span><button class="quick-add" type="button" aria-label="Thêm Bộ thí nghiệm hóa học vui vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">bfdsfdv</p><h3>Thí nghiệm hóa học vui</h3><p class="product-desc">Khám phá phản ứng khoa học qua hoạt động an toàn.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 5.0 <small>(34)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>480.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="math" data-name="Bộ phân số trực quan" data-price="260000">
+                        <div class="product-visual visual-mint"><i class="fa-solid fa-chart-pie" aria-hidden="true"></i><span class="visual-caption">MATH MADE CLEAR</span><button class="quick-add" type="button" aria-label="Thêm Bộ phân số trực quan vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">fsfefdd</p><h3>Bộ phân số trực quan</h3><p class="product-desc">Giúp trẻ hiểu phân số qua miếng ghép nhiều màu.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.7 <small>(18)</small></span><span>7+ tuổi</span></div><div class="product-buy"><strong>260.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="creative" data-name="Bộ lắp ráp máy bay" data-price="390000">
+                        <div class="product-visual visual-sky"><i class="fa-solid fa-plane" aria-hidden="true"></i><span class="visual-caption">FLIGHT &amp; FUN</span><button class="quick-add" type="button" aria-label="Thêm Bộ lắp ráp máy bay vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">Sdfddf</p><h3>Bộ lắp ráp máy bay</h3><p class="product-desc">Tìm hiểu lực nâng qua mô hình máy bay tự lắp.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8 <small>(20)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>390.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="robotics" data-name="Robot xe dò đường" data-price="790000">
+                        <div class="product-visual visual-lilac"><span class="product-badge">Nâng cao</span><i class="fa-solid fa-car-side" aria-hidden="true"></i><span class="visual-caption">SMART ROVER</span><button class="quick-add" type="button" aria-label="Thêm Robot xe dò đường vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">fd c cxvc</p><h3>Robot xe dò đường</h3><p class="product-desc">Lắp cảm biến và lập trình xe tự tìm đường đi.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9 <small>(15)</small></span><span>10+ tuổi</span></div><div class="product-buy"><strong>790.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="science" data-name="Bộ khám phá hệ mặt trời" data-price="310000">
+                        <div class="product-visual visual-blue"><i class="fa-solid fa-earth-americas" aria-hidden="true"></i><span class="visual-caption">SPACE EXPLORER</span><button class="quick-add" type="button" aria-label="Thêm Bộ khám phá hệ mặt trời vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">Kjhfdkdvk</p><h3>Khám phá hệ mặt trời</h3><p class="product-desc">Tự lắp mô hình các hành tinh và tìm hiểu vũ trụ.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8 <small>(22)</small></span><span>7+ tuổi</span></div><div class="product-buy"><strong>310.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="math" data-name="Đồng hồ học giờ vui nhộn" data-price="210000">
+                        <div class="product-visual visual-peach"><i class="fa-solid fa-clock" aria-hidden="true"></i><span class="visual-caption">TIME TO LEARN</span><button class="quick-add" type="button" aria-label="Thêm Đồng hồ học giờ vui nhộn vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">Tdfndmfm</p><h3>Đồng hồ học giờ vui nhộn</h3><p class="product-desc">Thực hành xem giờ, tính thời gian một cách dễ dàng.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.6 <small>(11)</small></span><span>5+ tuổi</span></div><div class="product-buy"><strong>210.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="creative" data-name="Bộ vẽ mạch điện sáng tạo" data-price="290000">
+                        <div class="product-visual visual-yellow"><span class="product-badge badge-new">Mới</span><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i><span class="visual-caption">DESIGN &amp; MAKE</span><button class="quick-add" type="button" aria-label="Thêm Bộ vẽ mạch điện sáng tạo vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">ndmvjdsj</p><h3>Vẽ mạch điện sáng tạo</h3><p class="product-desc">Kết hợp mỹ thuật và khoa học để tạo tranh phát sáng.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9 <small>(13)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>290.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="robotics" data-name="Bộ cánh tay robot cơ học" data-price="920000">
+                        <div class="product-visual visual-mint"><i class="fa-solid fa-hand" aria-hidden="true"></i><span class="visual-caption">MECHANICAL ARM</span><button class="quick-add" type="button" aria-label="Thêm Bộ cánh tay robot cơ học vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">fndnmdmnv</p><h3>Cánh tay robot cơ học</h3><p class="product-desc">Lắp cơ cấu truyền động và điều khiển cánh tay robot.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 5.0 <small>(9)</small></span><span>10+ tuổi</span></div><div class="product-buy"><strong>920.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="science" data-name="Bộ lọc nước mini" data-price="360000">
+                        <div class="product-visual visual-sky"><i class="fa-solid fa-droplet" aria-hidden="true"></i><span class="visual-caption">CLEAN WATER LAB</span><button class="quick-add" type="button" aria-label="Thêm Bộ lọc nước mini vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">Knjdhjdkv</p><h3>Bộ lọc nước mini</h3><p class="product-desc">Tìm hiểu các lớp lọc và ý nghĩa của nguồn nước sạch.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.8 <small>(16)</small></span><span>8+ tuổi</span></div><div class="product-buy"><strong>360.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="creative" data-name="Bộ lắp ghép kiến trúc" data-price="560000">
+                        <div class="product-visual visual-lilac"><i class="fa-solid fa-city" aria-hidden="true"></i><span class="visual-caption">LITTLE ARCHITECT</span><button class="quick-add" type="button" aria-label="Thêm Bộ lắp ghép kiến trúc vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">dnfbndbfkd</p><h3>Bộ lắp ghép kiến trúc</h3><p class="product-desc">Thiết kế thành phố thu nhỏ và xây dựng ý tưởng riêng.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.9 <small>(24)</small></span><span>7+ tuổi</span></div><div class="product-buy"><strong>560.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                    <article class="product-card" data-category="math" data-name="Bộ cân thăng bằng toán học" data-price="240000">
+                        <div class="product-visual visual-yellow"><i class="fa-solid fa-scale-balanced" aria-hidden="true"></i><span class="visual-caption">BAgmfg,fgk</span><button class="quick-add" type="button" aria-label="Thêm Bộ cân thăng bằng toán học vào giỏ"><i class="fa-solid fa-plus" aria-hidden="true"></i></button></div>
+                        <div class="product-info"><p class="product-category">Tkkjdkks</p><h3>Cân thăng bằng toán học</h3><p class="product-desc">Học phép tính và khái niệm cân bằng qua trò chơi.</p><div class="product-meta"><span><i class="fa-solid fa-star" aria-hidden="true"></i> 4.7 <small>(10)</small></span><span>6+ tuổi</span></div><div class="product-buy"><strong>240.000đ</strong><button type="button" class="add-button">Thêm vào giỏ <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button></div></div>
+                    </article>
+                </div>
+                <div class="empty-state" id="emptyState" hidden>
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                    <h3>Chưa tìm thấy sản phẩm phù hợp</h3>
+                    <p>Thử đổi từ khóa hoặc chọn một danh mục khác nhé.</p>
+                </div>
+                <div class="shop-help">
+                    <div><span class="help-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span><div><strong>Chưa biết chọn bộ nào?</strong><p>Đội ngũ MekaSTEM sẵn sàng giúp bạn tìm học cụ phù hợp với độ tuổi và sở thích của con.</p></div></div>
+                    <a href="contact.html" class="btn btn-primary">Nhờ tư vấn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="cart-backdrop" id="cartBackdrop" hidden></div>
+    <aside class="cart-panel" id="cartPanel" aria-labelledby="cartTitle" aria-hidden="true">
+        <div class="cart-panel-heading">
+            <div><p class="eyebrow">MekaSTEM shop</p><h2 id="cartTitle">Giỏ hàng <span id="cartTitleCount">(0)</span></h2></div>
+            <button class="cart-close" id="cartClose" type="button" aria-label="Đóng giỏ hàng"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+        </div>
+        <div class="cart-items" id="cartItems"></div>
+        <div class="cart-empty" id="cartEmpty"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><p>Giỏ hàng đang trống.</p><span>Thêm học cụ yêu thích để bắt đầu nhé!</span></div>
+        <div class="cart-summary" id="cartSummary" hidden>
+            <div><span>Tạm tính</span><strong id="cartSubtotal">0đ</strong></div>
+            <p>Chi phí vận chuyển sẽ được tư vấn khi xác nhận đơn hàng.</p>
+            <a class="btn btn-primary" href="contact.html">Liên hệ đặt hàng <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+    </aside>
+    <div class="shop-toast" id="shopToast" role="status" aria-live="polite"></div>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div><a href="index.html" class="logo">MekaSTEM</a><p>Học tập hiệu quả, tư duy sáng tạo, tương lai bền vững.</p></div>
+            <div><h4>Liên kết</h4><ul><li><a href="about.html">Giới thiệu</a></li><li><a href="courses.html">Khóa học</a></li><li><a href="product.html">Sản phẩm STEM</a></li><li><a href="contact.html">Liên hệ</a></li></ul></div>
+            <div><h4>Liên hệ</h4><ul><li><i class="fa-solid fa-phone"></i> 0901 234 567</li><li><i class="fa-solid fa-envelope"></i> hello@mekastem.vn</li><li><i class="fa-solid fa-location-dot"></i> 180 Trường Chinh, Kiến An, TP. Hải Phòng</li></ul></div>
+        </div>
+        <div class="copyright">© 2026 MekaSTEM. All rights reserved.</div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
